@@ -1,0 +1,114 @@
+/* 
+code by - Dhawal (@dhawalRath)
+Date - 18th May 2021
+*/
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* colors */
+:root{
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container-fluid{
+  background-image: url('./images/bg-mobile.svg');
+  background-color: var(--violet);
+  background-repeat: no-repeat;
+  background-position: center top;
+  /* background-size: cover; */
+}
+
+.row img{
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.row .chip{
+  padding: 0 1.5rem;  
+  text-align: center;
+}
+
+.row .chip .head{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.row .chip p{
+  margin: 1.5rem 0;
+}
+
+.row .chip .btn{
+  font-family: 'Poppins', sans-serif;
+  padding: 0.7rem 5rem;
+  font-size: 0.75rem;
+  color: var(--violet);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.row .chip .btn:hover{
+  background-color: var(--soft-magenta);
+  color: var(--white);
+}
+
+.box {
+  padding: 3rem 0;
+}
+
+.box i{
+  cursor: pointer;
+  border: 1px solid var(--white);
+}
+
+.box i:hover{
+  color: var(--soft-magenta);
+  border: 1px solid var(--soft-magenta);
+}
+
+@media (min-width: 500px) {
+  .container-fluid{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media (max-width: 768px){
+  
+}
+
+@media (min-width: 768px) {
+
+  .container-fluid{
+    background-image: url('./images/bg-desktop.svg');
+    background-position: center center;
+    /* background-size: cover; */
+  }
+
+  .box{
+    float: right;
+    padding: 1rem 0;
+  }
+
+  .row img{
+    margin-bottom: 1rem;
+  }
+
+  .row .chip{
+    margin-top: 5rem;
+    text-align: left;
+  }
+
+  .row .chip .btn{
+    padding: 0.7rem 3rem;
+  }
+}
