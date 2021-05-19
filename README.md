@@ -19,7 +19,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ### Links
 
-- Live Site URL: [view here](https://dhawalrath.github.io/testimonial-grid-section/)
+- Live Site URL: [view here](https://dhawalrath.github.io/huddle-landing-page/)
 
 ## My process
 
